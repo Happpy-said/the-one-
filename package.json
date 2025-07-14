@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start"
-  },
+    "scripts": {
+  "build": "echo '🚀 BUILD START' && next build && echo '✅ BUILD OK' && next export && echo '📦 EXPORT OK'"
+},
   "dependencies": {
     "autoprefixer": "^10.4.14",
     "next": "13.4.12",
