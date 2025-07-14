@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "scripts": {
-  "build": "echo '🚀 BUILD START' && next build && echo '✅ BUILD OK' && next export && echo '📦 EXPORT OK'"
+  ""build": "echo '🔧 Build started' && next build && echo '📦 Export started' && next export"
 },
   "dependencies": {
     "autoprefixer": "^10.4.14",
