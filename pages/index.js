@@ -71,7 +71,7 @@ export default function Home() {
     <div
       className="min-h-screen bg-cover bg-center flex flex-col items-center justify-center text-white px-4"
       style={{
-        backgroundImage: "url('/pages/index.js')",
+        backgroundImage: "url('gp.jpg')",
         backgroundColor: "rgba(0,0,0,0.7)",
         backgroundBlendMode: "overlay",
       }}
