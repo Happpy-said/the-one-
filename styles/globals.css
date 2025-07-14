@@ -1,1 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Animation fadeIn */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+/* Tu peux ajouter plus d’animations plus tard ici */
