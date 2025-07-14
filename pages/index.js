@@ -9,7 +9,8 @@ const translations = {
     service_label: "Type de service",
     time_label: "Créneau horaire",
     whatsapp_btn: "Réserver via WhatsApp",
-    call_now: "Appeler maintenant"
+    call_now: "Appeler maintenant",
+    pricing_title: "Nos Tarifs"
   },
   en: {
     hero_title: "Mobile Car Wash",
@@ -19,7 +20,8 @@ const translations = {
     service_label: "Service Type",
     time_label: "Time Slot",
     whatsapp_btn: "Book via WhatsApp",
-    call_now: "Call now"
+    call_now: "Call now",
+    pricing_title: "Our Prices"
   },
   ar: {
     hero_title: "غسيل سيارات متنقل",
@@ -29,7 +31,8 @@ const translations = {
     service_label: "نوع الخدمة",
     time_label: "الفترة الزمنية",
     whatsapp_btn: "احجز عبر واتساب",
-    call_now: "اتصل الآن"
+    call_now: "اتصل الآن",
+    pricing_title: "الأسعار"
   },
 };
 
@@ -63,6 +66,7 @@ export default function Home() {
     const url = "https://wa.me/21652552112?text=" + encodeURIComponent(msg);
     window.open(url, "_blank");
   };
+
   return (
     <div
       className="min-h-screen bg-cover bg-center flex flex-col items-center justify-center text-white px-4"
@@ -91,6 +95,18 @@ export default function Home() {
         <p className="text-lg drop-shadow">{t.hero_desc}</p>
       </div>
 
+      {/* Pricing */}
+      <div className="bg-black bg-opacity-70 rounded-xl p-6 w-full max-w-2xl text-white mb-10 animate-fadeIn shadow-xl">
+        <h3 className="text-2xl font-bold mb-4 text-center">{t.pricing_title}</h3>
+        <ul className="space-y-2 text-center">
+          <li>🚗 Lavage extérieur : à partir de 20 DT</li>
+          <li>🧼 Lavage intérieur : à partir de 25 DT</li>
+          <li>✨ Lavage complet : à partir de 40 DT</li>
+          <li>🧽 Moquette / tapis : selon la demande</li>
+          <li>💎 Pack diamant vapeur : à partir de 89 DT</li>
+        </ul>
+      </div>
+
       {/* Reservation form */}
       <div className="bg-black bg-opacity-60 rounded-xl p-6 w-full max-w-md animate-fadeIn shadow-lg">
         <div className="mb-4">
@@ -108,6 +124,7 @@ export default function Home() {
             <option>Intérieur</option>
             <option>Complet</option>
             <option>Moquette</option>
+            <option>Pack diamant vapeur</option>
           </select>
         </div>
         <div className="mb-6">
