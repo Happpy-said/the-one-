@@ -1,5 +1,6 @@
-import "../globals.css"; // adapte le chemin si nécessaire
+import "../globals.css";
 import Navbar from "../components/Navbar";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -7,6 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-black text-white min-h-screen">
         <Navbar />
         <main className="pt-20">{children}</main>
+        <WhatsAppButton />
       </body>
     </html>
   );
