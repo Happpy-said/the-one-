@@ -33,9 +33,9 @@ export default function GaleriePage() {
   const t = translations[locale];
 
   const gallery = [
-    { before: "/avant1.jpg", after: "/apres1.jpg" },
-    { before: "/avant2.jpg", after: "/apres2.jpg" },
-    { before: "/avant3.jpg", after: "/apres3.jpg" },
+    { before: "/tapis-sale.jpg", after: "/tapis-propre.jpg" },
+    { before: "/siege-avant.jpg", after: "/siege-apres.jpg" },
+    { before: "/sol-avant.jpg", after: "/sol-apres.jpg" },
   ];
 
   return (
