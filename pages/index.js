@@ -71,7 +71,7 @@ export default function Home() {
     <div
       className="min-h-screen bg-cover bg-center flex flex-col items-center justify-center text-white px-4"
       style={{
-        backgroundImage: "url('/gp.jpg')",
+        backgroundImage: "url('/https://i.postimg.cc/yd3YLJXh/78134252-lavage-de-voitures-blue-background-concept-mosa-que-th-me-du-v-hicule-de-nettoyage.jpg')",
         backgroundColor: "rgba(0,0,0,0.7)",
         backgroundBlendMode: "overlay",
       }}
