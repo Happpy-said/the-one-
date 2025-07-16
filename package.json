@@ -11,7 +11,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "framer-motion": "^10.16.1",
-    "react-intersection-observer": "^9.4.0"
+    "react-intersection-observer": "^9.4.0",
+    "bcrypt": "^5.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
