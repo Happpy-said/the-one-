@@ -1,7 +1,7 @@
-import "../globals.css";
-import Navbar from "../components/Navbar";
-import WhatsAppButton from "../components/WhatsAppButton";
-import Footer from "../components/Footer";
+import "@/globals.css";
+import Navbar from "@/components/Navbar";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
