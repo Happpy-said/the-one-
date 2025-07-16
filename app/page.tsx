@@ -1,33 +1,55 @@
-"use client";
-
 import FadeInWhenVisible from "@/components/FadeInWhenVisible";
+import Link from "next/link";
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <div className="bg-[url('/bg.jpg')] bg-cover bg-center min-h-screen text-white">
-      <div className="bg-black/70 min-h-screen px-4 sm:px-8 py-20 flex flex-col items-center justify-center text-center">
+    <main className="min-h-screen bg-gradient-to-b from-black via-blue-900 to-black text-white p-8">
+      <div className="max-w-6xl mx-auto text-center">
+
         <FadeInWhenVisible>
-          <h1 className="text-4xl md:text-6xl font-bold text-blue-400 mb-6">
+          <h1 className="text-5xl font-bold mb-6 text-blue-400">
             Bienvenue chez CleanDrive
           </h1>
         </FadeInWhenVisible>
 
         <FadeInWhenVisible>
-          <p className="text-lg md:text-xl text-blue-200 max-w-2xl mb-8">
-            Le lavage auto à domicile professionnel, rapide et sans stress. Prenez rendez-vous en un clic.
+          <p className="text-lg text-blue-200 mb-10">
+            Lavage auto à domicile rapide, écologique et professionnel.
           </p>
         </FadeInWhenVisible>
 
         <FadeInWhenVisible>
-          <a
-            href="https://wa.me/216XXXXXXXX"
-            target="_blank"
-            className="mt-4 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full transition"
+          <Link
+            href="/reservation"
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-2xl shadow-lg transition duration-300"
           >
-            Réserver sur WhatsApp
-          </a>
+            Réserver maintenant
+          </Link>
         </FadeInWhenVisible>
+
+        <div className="mt-20 grid gap-8 md:grid-cols-3 text-left">
+          <FadeInWhenVisible>
+            <div className="bg-gray-800 p-6 rounded-xl shadow-md">
+              <h3 className="text-xl font-bold text-blue-300 mb-2">Lavage Extérieur</h3>
+              <p className="text-blue-100">À partir de 20 DT. Nettoyage complet de la carrosserie avec produits écologiques.</p>
+            </div>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <div className="bg-gray-800 p-6 rounded-xl shadow-md">
+              <h3 className="text-xl font-bold text-blue-300 mb-2">Lavage Intérieur</h3>
+              <p className="text-blue-100">À partir de 25 DT. Aspiration, plastiques, vitres, désinfection.</p>
+            </div>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <div className="bg-gray-800 p-6 rounded-xl shadow-md">
+              <h3 className="text-xl font-bold text-blue-300 mb-2">Pack Diamant Vapeur</h3>
+              <p className="text-blue-100">À partir de 89 DT. Détail complet intérieur/extérieur + vapeur + parfum.</p>
+            </div>
+          </FadeInWhenVisible>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
