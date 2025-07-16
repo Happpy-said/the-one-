@@ -1,6 +1,6 @@
 "use client";
 
-import FadeInWhenVisible from "../components/FadeInWhenVisible";
+import FadeInWhenVisible from "@/components/FadeInWhenVisible";
 
 export default function HomePage() {
   return (
